@@ -4,3 +4,7 @@ b=b.fontcolor("green");
 c=c.fontcolor("pink");
 document.write(b);
 document.write(36/2);
+
+function myFunction(){
+    document.write(c);
+}
