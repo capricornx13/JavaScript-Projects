@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Heritage Room | X-Wing</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/one_page_website.css">
+	</head>
+	<body>
+	<header>
+		<!--NAV-->
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a> | </li>
+					<li><a href="#pilots">Pilots</a> | </li>
+					<li><a href="#dogfights">Dogfights</a> | </li>
+					<li><a href="#howto">How-to</a> | </li>
+					<li><a href="#join">Join</a></li>					
+				</ul>
+			</nav>
+		<!--END NAV-->
+		</header>
+		<!--HOME-->
+		<section id="home">
+			<h1>X-Wing Heritage Room</h1>
+			<p>Welcome to the Heritage Room. Here we post up information about Fantasy Flight's X-Wing game as well as pictures from the local squadrons, or player groups, as well as top suggestions for pilots to play.</p>
+		</section>
+		<!--END HOME-->
+		
+		<!--PILOTS-->
+		<section id="pilots">
+			<h3>This week's top pilots!</h3>
+			<p>Top pilots for each faction as voted by the local squadrons.</p>
+
+<!--images for lightbox-->
+			<div class="row">
+				<div class="column">
+					<img src="./images/rebel_1.png" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/imperial_1.png" style="width: 100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/scum_1.png" style="width: 100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/resistance_1.png" style="width: 100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/first_order_1.png" style="width: 100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/republic_1.png" style="width: 100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/seperatist_1.png" style="width: 100%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+				</div>
+			</div>
+
+			<!--lightbox-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<div class="numbertext">1 / 7</div>
+						<img src="./images/rebel_1.png" style="width: 100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">2 / 7</div>
+						<img src="./images/imperial_1.png" style="width: 100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">3 / 7</div>
+						<img src="./images/scum_1.png" style="width: 100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">4 / 7</div>
+						<img src="./images/resistance_1.png" style="width: 100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">5 / 7</div>
+						<img src="./images/first_order_1.png" style="width: 100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">6 / 7</div>
+						<img src="./images/republic_1.png" style="width: 100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">7 / 7</div>
+						<img src="./images/seperatist_1.png" style="width: 100%">
+					</div>
+
+					<!--next/previous buttons-->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!--caption text-->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!--Thumbnail image controls-->
+					<div class="column">
+						<img class="demo" src="./images/rebel_1.png" onclick="currentSlide(1)" alt="Rebel" style="width: 100%">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/imperial_1.png" onclick="currentSlide(2)" alt="Imperial" style="width: 100%">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/scum_1.png" onclick="currentSlide(3)" alt="Scum and Villiany" style="width: 100%">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/resistance_1.png" onclick="currentSlide(4)" alt="Resistance" style="width: 100%">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/first_order_1.png" onclick="currentSlide(5)" alt="First Order" style="width: 100%">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/republic_1.png" onclick="currentSlide(6)" alt="Republic" style="width: 100%">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/seperatist_1.png" onclick="currentSlide(7)" alt="Seperatist" style="width: 100%">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END PILOTS-->
+		
+		<!--DOGFIGHTS-->
+		<section id="dogfights">
+			<h3>This week in dogfights</h3>
+			<p>Images from skirmishes across town.</p>
+			<table style="width:100%">
+				<tr>
+				<td><img src="images/fight_1.jpg" width="100%"></td>
+				<td><img src="images/fight_2.jpg" width="100%"></td>
+				<tr>
+			</table>
+		</section>
+		<!--END DOGFIGHTS-->
+		
+		<!--HOW TO-->
+		<section id="howto">
+			<h3>How to play the game</h3>
+			<p>Below is a video on how to play the game.</p>
+			<p><iframe width="700" height="394" src="https://www.youtube.com/embed/rXQ3TjM9Buo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+		</section>
+		<!--END HOW TO-->
+		
+		<!--JOIN-->
+		<section id="join">
+			<h3>Join the Squad</h3>
+			<p>Sign up today to join the Heritage Room mailing list.</p>
+			<form action="">
+				First Name: <input type="text"><br>
+				Last Name: <input type="text"><br>
+				Call Sign: <input type="text"><br>
+				Email: <input type="text"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+		<!--END JOIN-->
+		<br>
+		<br>
+		<br>
+		<footer>
+		Made by Jon Ward | Last updated <time>0918</time> on 7/24/19.
+		</footer>
+		<script src="./js/one_page_website.js"></script>
+	</body>
+</html>
